@@ -1,12 +1,13 @@
 package co.com.sofka.bibliotecawebflux.router;
 
-import co.com.sofka.bibliotecawebflux.collections.Recurso;
-import co.com.sofka.bibliotecawebflux.dto.RecursoDTO;
-import co.com.sofka.bibliotecawebflux.mapper.RecursoMapper;
-import co.com.sofka.bibliotecawebflux.repository.RepositorioRecurso;
-import co.com.sofka.bibliotecawebflux.useCases.UseCaseCrear;
-import co.com.sofka.bibliotecawebflux.utils.Area;
-import co.com.sofka.bibliotecawebflux.utils.Tipo;
+import co.com.sofka.bibliotecaSpringBootMongoDBReactiva.model.Recurso;
+import co.com.sofka.bibliotecaSpringBootMongoDBReactiva.dto.RecursoDTO;
+import co.com.sofka.bibliotecaSpringBootMongoDBReactiva.mapper.RecursoMapper;
+import co.com.sofka.bibliotecaSpringBootMongoDBReactiva.repository.RepositorioRecurso;
+import co.com.sofka.bibliotecaSpringBootMongoDBReactiva.router.CrearRecursoRouter;
+import co.com.sofka.bibliotecaSpringBootMongoDBReactiva.useCases.UseCaseCrear;
+import co.com.sofka.bibliotecaSpringBootMongoDBReactiva.utils.Area;
+import co.com.sofka.bibliotecaSpringBootMongoDBReactiva.utils.Tipo;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -21,9 +22,7 @@ import org.springframework.test.web.reactive.server.WebTestClient;
 import reactor.core.publisher.Mono;
 
 import java.time.LocalDate;
-import java.util.Date;
 
-import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.when;
 
